@@ -300,30 +300,24 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 ### Use cases
 
-(For all use cases below, the **System** is the `AddressBook` and the **Actor** is the `user`, unless specified otherwise)
+(For all use cases below, the **System** is the `RecruitTrackPro` and the **Actor** is the `user`, unless specified otherwise)
 
-**Use case: Delete a person**
+**Use case: List Candidate**
 
 **MSS**
 
-1.  User requests to list persons
-2.  AddressBook shows a list of persons
-3.  User requests to delete a specific person in the list
-4.  AddressBook deletes the person
-
+1.  User decides to list all candidates in the system by entering the command “list”, allowing user to view their name
+    , phone number, email, and address
+2.  RecruitTrackPro lists every candidate in the system with their fields visible
+    
     Use case ends.
 
 **Extensions**
 
-* 2a. The list is empty.
+* 1a.  User did not enter the “list” command.
+    * 1a1. RecruitTrackPro shows an error message.
 
-  Use case ends.
-
-* 3a. The given index is invalid.
-
-    * 3a1. AddressBook shows an error message.
-
-      Use case resumes at step 2.
+      Use case ends.
 
 *{More to be added}*
 
