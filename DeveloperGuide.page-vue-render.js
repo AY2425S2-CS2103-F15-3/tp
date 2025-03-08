@@ -242,21 +242,6 @@ with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 with(this){return _c('ul',[_c('li',[_v("2a. User enters a missing required field (name, phone number, email, or address).\n"),_c('ul',[_c('li',[_v("2a1. RecruitTrackPro displays an error message: “[parameter] cannot be empty.”\nUse case ends.")])])]),_v(" "),_c('li',[_v("2b. User enters an invalid format for any field.\n"),_c('ul',[_c('li',[_v("2b1. RecruitTrackPro displays an error message based on the invalid field.\nUse case ends.")])])]),_v(" "),_c('li',[_v("2c. User enters a duplicate candidate – same name and phone number as an existing candidate.\n"),_c('ul',[_c('li',[_v("2c1. RecruitTrackPro displays an error message: “Contact with this name and phone number already exists.”\nUse case ends.")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Use case: Delete a person")])])}
-},function anonymous(
-) {
-with(this){return _c('p',[_c('strong',[_v("MSS")])])}
-},function anonymous(
-) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to list persons")])]),_v(" "),_c('li',[_c('p',[_v("AddressBook shows a list of persons")])]),_v(" "),_c('li',[_c('p',[_v("User requests to delete a specific person in the list")])]),_v(" "),_c('li',[_c('p',[_v("AddressBook deletes the person")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
-},function anonymous(
-) {
-with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
-},function anonymous(
-) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("2a. The list is empty.")]),_v(" "),_c('p',[_v("Use case ends.")])]),_v(" "),_c('li',[_c('p',[_v("3a. The given index is invalid.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("3a1. AddressBook shows an error message.")]),_v(" "),_c('p',[_v("Use case resumes at step 2.")])])])])])}
-},function anonymous(
-) {
 with(this){return _c('p',[_c('strong',[_v("Use case: UC-002 - List Candidate")])])}
 },function anonymous(
 ) {
@@ -264,6 +249,21 @@ with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
 with(this){return _c('ol',[_c('li',[_c('p',[_v("User decides to list all candidates in the system by entering the command “list”, allowing user to view their name\n, phone number, email, and address.")])]),_v(" "),_c('li',[_c('p',[_v("RecruitTrackPro lists every candidate in the system with their fields visible.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Use Case: UC-003 - Delete Candidate")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("MSS")])])}
+},function anonymous(
+) {
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to remove a specified candidate from the address book based on the displayed list index.")])]),_v(" "),_c('li',[_c('p',[_v("Specified contact is removed and a success message is displayed.")])]),_v(" "),_c('li',[_c('p',[_v("RecruitTrackPro updates the displayed list accordingly.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. User enters an invalid index (ie. not a positive integer).")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. RecruitTrackPro shows an error message.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. User enters an index that is out of bounds.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. RecruitTrackPro shows an error message.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Use case: UC-004 - Find Candidates")])])}
@@ -350,6 +350,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_c('em',[_v("{explain how to simulate a missing/corrupted file, and the expected behavior}")])])])]),_v(" "),_c('li',[_c('p',[_c('em',[_v("{ more test cases …​ }")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Sat, 8 Mar 2025, 3:33:48 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Sat, 8 Mar 2025, 16:53:32 GMT+8]")])])])}
 }];
   
