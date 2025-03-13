@@ -233,13 +233,13 @@ with(this){return _c('p',[_c('strong',[_v("Use Case: UC-001 - Add Candidate")])]
 with(this){return _c('p',[_c('strong',[_v("MSS:")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("User provides a candidate’s details, including name, phone number, email, address, and optional tags.")])]),_v(" "),_c('li',[_c('p',[_v("RecruitTrackPro validates the provided information.")])]),_v(" "),_c('li',[_c('p',[_v("The candidate is added to the system.")])]),_v(" "),_c('li',[_c('p',[_v("RecruitTrackPro displays a success message confirming the addition.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to add a candidate with relevant details.")])]),_v(" "),_c('li',[_c('p',[_v("RecruitTrackPro adds the new candidate and displays a success message.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("2a. User enters a missing required field (name, phone number, email, or address).")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("2a1. RecruitTrackPro displays an error message: “[parameter] cannot be empty.”")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("2b. User enters an invalid format for any field.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("2b1. RecruitTrackPro displays an error message based on the invalid field.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("2c. User enters a duplicate candidate – same name and phone number as an existing candidate.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("2c1. RecruitTrackPro displays an error message: “Contact with this name and phone number already exists.”")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
+with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. User enters a missing required field (name, phone number, email, or address).")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. RecruitTrackPro displays an error message: “[parameter] cannot be empty.”")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. User enters an invalid format for any field.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. RecruitTrackPro displays an error message based on the invalid field.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1c. User enters a duplicate candidate – same name and phone number as an existing candidate.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1c1. RecruitTrackPro displays an error message: “Contact with this name and phone number already exists.”")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Use case: UC-002 - List Candidate")])])}
@@ -365,6 +365,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_c('em',[_v("{explain how to simulate a missing/corrupted file, and the expected behavior}")])])])]),_v(" "),_c('li',[_c('p',[_c('em',[_v("{ more test cases …​ }")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Thu, 13 Mar 2025, 17:24:04 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Thu, 13 Mar 2025, 17:24:33 GMT+8]")])])])}
 }];
   
