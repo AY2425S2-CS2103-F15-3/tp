@@ -248,7 +248,7 @@ with(this){return _c('p',[_c('strong',[_v("Use case: UC-002 - List Candidate")])
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("User decides to list all candidates in the system by entering the command “list”, allowing user to view their name,\nphone number, email, and address.")])]),_v(" "),_c('li',[_c('p',[_v("RecruitTrackPro lists every candidate in the system with their fields visible.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests a list of all candidates.")])]),_v(" "),_c('li',[_c('p',[_v("RecruitTrackPro displays the list of candidates with relevant details.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Use Case: UC-003 - Delete Candidate")])])}
@@ -365,6 +365,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_c('em',[_v("{explain how to simulate a missing/corrupted file, and the expected behavior}")])])])]),_v(" "),_c('li',[_c('p',[_c('em',[_v("{ more test cases …​ }")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Thu, 13 Mar 2025, 14:44:56 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Thu, 13 Mar 2025, 14:46:47 GMT+8]")])])])}
 }];
   
