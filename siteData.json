@@ -131,7 +131,7 @@
       "src": "index.md",
       "title": "",
       "headings": {
-        "addressbook-level-3": "AddressBook Level-3"
+        "recruittrackpro-level-3": "RecruitTrackPro Level-3"
       },
       "headingKeywords": {}
     },
@@ -139,7 +139,7 @@
       "src": "team/johndoe.md",
       "title": "John Doe's Project Portfolio Page",
       "headings": {
-        "project-addressbook-level-3": "Project: AddressBook Level 3"
+        "project-recruittrackpro-level-3": "Project: RecruitTrackPro Level 3"
       },
       "headingKeywords": {}
     }
