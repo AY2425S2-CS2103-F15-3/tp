@@ -11,13 +11,22 @@ import seedu.recruittrackpro.commons.util.ToStringBuilder;
  */
 public class NameContainsKeywordsPredicate implements Predicate<Person> {
     private final List<String> keywords;
+    private final boolean shouldContainAll;
 
-    public NameContainsKeywordsPredicate(List<String> keywords) {
+    /**
+     * Constructs a  {@code NameContainsKeywordsPredicate} with the specified options.
+     */
+    public NameContainsKeywordsPredicate(List<String> keywords, boolean shouldContainAll) {
         this.keywords = keywords;
+        this.shouldContainAll = shouldContainAll;
     }
 
     @Override
     public boolean test(Person person) {
+        if (shouldContainAll) {
+            return keywords.stream()
+                    .allMatch(keyword -> StringUtil.containsWordIgnoreCase(person.getName().fullName, keyword));
+        }
         return keywords.stream()
                 .anyMatch(keyword -> StringUtil.containsWordIgnoreCase(person.getName().fullName, keyword));
     }
