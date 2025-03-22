@@ -14,7 +14,11 @@ import org.junit.jupiter.api.Test;
 
 import seedu.recruittrackpro.logic.commands.FindCommand;
 import seedu.recruittrackpro.logic.predicates.ContainsKeywordsPredicate;
+import seedu.recruittrackpro.model.person.Address;
+import seedu.recruittrackpro.model.person.Email;
 import seedu.recruittrackpro.model.person.Name;
+import seedu.recruittrackpro.model.person.Phone;
+import seedu.recruittrackpro.model.tag.Tag;
 
 public class FindCommandParserTest {
 
@@ -27,6 +31,10 @@ public class FindCommandParserTest {
 
         // blank argument
         assertParseFailure(parser, " " + PREFIX_NAME, Name.MESSAGE_CONSTRAINTS);
+        assertParseFailure(parser, " " + PREFIX_TAG, Tag.MESSAGE_CONSTRAINTS);
+        assertParseFailure(parser, " " + PREFIX_ADDRESS, Address.MESSAGE_CONSTRAINTS);
+        assertParseFailure(parser, " " + PREFIX_EMAIL, Email.MESSAGE_CONSTRAINTS);
+        assertParseFailure(parser, " " + PREFIX_PHONE, Phone.MESSAGE_CONSTRAINTS);
 
         // non-empty preamble
         assertParseFailure(parser, PREAMBLE_NON_EMPTY + " " + PREFIX_NAME + "Alice Bob",
@@ -49,17 +57,16 @@ public class FindCommandParserTest {
         // no leading and trailing whitespaces
         Object[] tagKeywords = {PREFIX_TAG, new String[]{"friend", "neighbour"}};
         FindCommand expectedFindCommand = new FindCommand(new ContainsKeywordsPredicate(tagKeywords));
-        assertParseSuccess(parser, " " + PREFIX_TAG + "friend " + PREFIX_TAG + "neighbour", expectedFindCommand);
+        assertParseSuccess(parser, " " + PREFIX_TAG + "friend neighbour", expectedFindCommand);
 
         // multiple whitespaces between keywords
-        assertParseSuccess(parser, " " + PREFIX_TAG + " \n friend "
-                + PREFIX_TAG + "\t neighbour\t", expectedFindCommand);
+        assertParseSuccess(parser, " " + PREFIX_TAG + " \n friend \n\t neighbour\t", expectedFindCommand);
     }
 
     @Test
     public void parse_validAddressArgs_returnsFindCommand() {
         // no leading and trailing whitespaces
-        Object[] addressKeywords = {PREFIX_ADDRESS, new String[]{"5 Boundary Road"}};
+        Object[] addressKeywords = {PREFIX_ADDRESS, new String[]{"5", "Boundary", "Road"}};
         FindCommand expectedFindCommand = new FindCommand(new ContainsKeywordsPredicate(addressKeywords));
         assertParseSuccess(parser, " " + PREFIX_ADDRESS + "5 Boundary Road", expectedFindCommand);
 

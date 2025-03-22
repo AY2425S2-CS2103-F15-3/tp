@@ -33,17 +33,7 @@ public class StringUtil {
         String preppedSentence = sentence;
         String[] wordsInPreppedSentence = preppedSentence.split("\\s+");
 
-        return exactMatchIgnoreCase(preppedSentence, preppedWord)
-                || partialMatchIgnoreCase(wordsInPreppedSentence, preppedWord);
-    }
-
-    private static boolean exactMatchIgnoreCase(String sentence, String word) {
-        return sentence.equalsIgnoreCase(word);
-    }
-
-    private static boolean partialMatchIgnoreCase(String[] wordsInSentence, String word) {
-        return Arrays.stream(wordsInSentence).anyMatch(word::equalsIgnoreCase);
-
+        return Arrays.stream(wordsInPreppedSentence).anyMatch(preppedWord::equalsIgnoreCase);
     }
 
     /**
