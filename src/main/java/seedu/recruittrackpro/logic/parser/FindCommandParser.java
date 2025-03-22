@@ -100,7 +100,7 @@ public class FindCommandParser implements Parser<FindCommand> {
                 throw new ParseException(Address.MESSAGE_CONSTRAINTS);
             }
 
-            addressKeywordArray[1] = new String[]{address};
+            addressKeywordArray[1] = address.split("\\s+");
         }
         return addressKeywordArray;
     }
