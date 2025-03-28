@@ -1,0 +1,41 @@
+@startuml
+start
+
+:User enters "edit-tag INDEX from/OLD_TAG to/NEW_TAG";
+
+:EditTagCommand is executed;
+
+:Get filtered person list;
+
+if () then ([list is empty])
+    :Message: "No candidates to edit! The displayed list is empty.";
+    stop
+else ([list is not empty])
+    :Check if index is within bounds;
+
+    if () then ([invalid index])
+        :Message: "The person index provided is invalid.";
+        stop
+    else ([valid index])
+        :Get targetPerson;
+        :Get current tags from person;
+
+        :Check if OLD_TAG exists in tag list;
+
+        if () then ([tag not found])
+            :Message: "Tag specified is not in the persons tag list.";
+            stop
+        else ([tag found])
+            :Replace OLD_TAG with NEW_TAG;
+            :Create updatedPerson with new tag list;
+
+            :Update model with updatedPerson;
+            :Update filtered list;
+
+            :Display success message to User;
+        endif
+    endif
+endif
+
+stop
+@enduml
