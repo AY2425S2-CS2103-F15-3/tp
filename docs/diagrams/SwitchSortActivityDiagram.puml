@@ -1,0 +1,25 @@
+@startuml
+start
+
+if ()
+    :User enters "switch-sort";
+else ()
+    :User clicks on sortButton;
+endif
+
+:SwitchSortCommand is executed;
+:Check default sorting order;
+
+if () then ([isAscending])
+    :Set isAscending = false;
+    :Set comparatorInUse = PERSON_COMPARATOR_DESCENDING;
+    :Message: "List sorting has been switched to descending";
+else ([!isAscending])
+    :Set isAscending = true;
+    :Set comparatorInUse = PERSON_COMPARATOR_ASCENDING;
+    :Message: "List sorting has been switched to ascending";
+endif
+
+:Display success message to User;
+stop
+@enduml
