@@ -4,9 +4,11 @@
   pageNav: 3
 ---
 
-# AB-3 User Guide
+# RecruitTrackPro User Guide
 
-RecruitTrackPro Level 3 (AB3) is a **desktop app for managing contacts, optimized for use via a  Line Interface** (CLI) while still having the benefits of a Graphical User Interface (GUI). If you can type fast, AB3 can get your contact management tasks done faster than traditional GUI apps.
+RecruitTrackPro is a **desktop app for managing applicants, optimized for use via a Line Interface** (CLI) while still
+having the benefits of a Graphical User Interface (GUI). If you can type fast, RecruitTrackPro can get your applicant
+management tasks done faster than traditional GUI apps.
 
 <!-- * Table of Contents -->
 <page-nav-print />
@@ -18,7 +20,7 @@ RecruitTrackPro Level 3 (AB3) is a **desktop app for managing contacts, optimize
 1. Ensure you have Java `17` or above installed in your Computer.<br>
    **Mac users:** Ensure you have the precise JDK version prescribed [here](https://se-education.org/guides/tutorials/javaInstallationMac.html).
 
-1. Download the latest `.jar` file from [here](https://github.com/se-edu/addressbook-level3/releases).
+1. Download the latest `.jar` file from [here](https://github.com/AY2425S2-CS2103-F15-3/tp/releases).
 
 1. Copy the file to the folder you want to use as the _home folder_ for your RecruitTrackPro.
 
@@ -172,10 +174,6 @@ RecruitTrackPro data are saved automatically as a JSON file `[JAR file location]
 If your changes to the data file makes its format invalid, RecruitTrackPro will discard all data and start with an empty data file at the next run.  Hence, it is recommended to take a backup of the file before editing it.<br>
 Furthermore, certain edits can cause the RecruitTrackPro to behave in unexpected ways (e.g., if a value entered is outside the acceptable range). Therefore, edit the data file only if you are confident that you can update it correctly.
 </box>
-
-### Archiving data files `[coming in v2.0]`
-
-_Details coming soon ..._
 
 --------------------------------------------------------------------------------------------------------------------
 
