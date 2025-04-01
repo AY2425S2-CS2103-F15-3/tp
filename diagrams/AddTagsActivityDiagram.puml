@@ -1,0 +1,36 @@
+@startuml
+start
+
+:User enters "add-tags INDEX t/TAG...";
+
+:AddTagsCommand is executed;
+
+:Get filtered person list;
+
+if () then ([list is empty])
+    :Message: No candidates to edit! The displayed list is empty.;
+    stop
+else ([list is not empty])
+    :Check if index is within bounds;
+
+    if () then ([invalid index])
+        :Message: "The person index provided is invalid.";
+        stop
+    else ([valid index])
+        :Get targetPerson;
+        :Get current tags from person;
+
+        :Separate input tags into:\n- Tags to add (not yet in current tags)\n- Tags already present;
+
+        :Merge new tags with current tags;
+        :Create updatedPerson;
+
+        :Update model with updatedPerson;
+        :Update filtered list;
+
+        :Display success message with:\n- Added tags\n- (Optional) Tags already present;
+    endif
+endif
+
+stop
+@enduml
