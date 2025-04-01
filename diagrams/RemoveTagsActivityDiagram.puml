@@ -1,0 +1,36 @@
+@startuml
+start
+
+:User enters "remove-tags INDEX t/TAG...";
+
+:RemoveTagsCommand is executed;
+
+:Get filtered person list;
+
+if () then ([list is empty])
+    :Message: No candidates to edit! The displayed list is empty.;
+    stop
+else ([list is not empty])
+    :Check if index is within bounds;
+
+    if () then ([invalid index])
+        :Message: "The person index provided is invalid.";
+        stop
+    else ([valid index])
+        :Get targetPerson;
+        :Get current tags from person;
+
+        :Separate input tags into:\n- Tags to remove (existing)\n- Tags not found;
+
+        :Remove matching tags from person;
+        :Create updatedPerson;
+
+        :Update model with updatedPerson;
+        :Update filtered list;
+
+        :Display success message with:\n- Removed tags\n- (Optional) Tags not found;
+    endif
+endif
+
+stop
+@enduml
