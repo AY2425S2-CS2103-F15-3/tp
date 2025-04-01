@@ -30,7 +30,7 @@ public class RemoveTagsCommand extends Command {
             + "The specified tags will be removed from the person's existing tag list if it matches exactly, "
             + "ignoring case sensitivity.\n"
             + "Parameters: INDEX (must be a positive integer) "
-            + "[" + PREFIX_TAG + "TAG]\n"
+            + "[" + PREFIX_TAG + "TAG]...\n"
             + "Example: " + COMMAND_WORD + " 1 "
             + PREFIX_TAG + "Java Developer";
     public static final String MESSAGE_REMOVE_TAGS_SUCCESS = "Tags removed from %1$s: %2$s";
