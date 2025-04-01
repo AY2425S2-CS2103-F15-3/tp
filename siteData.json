@@ -53,6 +53,7 @@
         "implementation": "Implementation",
         "remove-tags-feature": "Remove tags feature",
         "edit-tag-feature": "Edit tag feature",
+        "find-tag-feature": "Find tag feature",
         "switch-sort-feature": "Switch sort feature",
         "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",
         "proposed-data-archiving": "[Proposed] Data archiving",

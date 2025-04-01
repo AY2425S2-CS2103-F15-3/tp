@@ -1,0 +1,21 @@
+@startuml
+start
+
+:User enters "find t/tags";
+
+:FindCommand is executed;
+
+:Get filtered person list;
+
+if () then ([FindCommand is null])
+    :Message: "Tags names should be within 25 characters";
+    stop
+else ([FindCommand is not null])
+    :Update FilteredPersonList with tags;
+
+    :Message: FilteredPersonList.size() + " persons listed!";
+
+    :Display filtered persons to User;
+
+stop
+@enduml
