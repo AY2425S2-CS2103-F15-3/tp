@@ -323,19 +323,19 @@ with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. Candidate does not exist.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. RecruitTrackPro notifies the user that the candidate does not exist.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. User does not specify any tags.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. RecruitTrackPro prompts the user to enter at least one tag.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1c. User enters a duplicate tag.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1c1. RecruitTrackPro informs the user that the tag already exists for the candidate.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Use case: UC-006 - Edit Candidate")])])}
+with(this){return _c('p',[_c('strong',[_v("Use case: UC-006 - Add Free-Form Notes to a Candidate")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to edit the field(s) of a specified candidate.")])]),_v(" "),_c('li',[_c('p',[_v("RecruitTrackPro shows the list of candidates with the updated information.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to add a comment for a candidate.")])]),_v(" "),_c('li',[_c('p',[_v("RecruitTrackPro shows the list of candidates with the updated information.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. Candidate specified by the user does not exist.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. RecruitTrackPro notifies the user that the candidate does not exist.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. User enters an invalid format for any field.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. RecruitTrackPro displays an error message based on the invalid field.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
+with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. Candidate specified by the user does not exist.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. RecruitTrackPro notifies the user that the candidate does not exist.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Use case: UC-007 - Remove Tag from a Candidate")])])}
@@ -386,6 +386,6 @@ with(this){return _c('h3',{attrs:{"id":"finding-a-candidate"}},[_v("Finding a ca
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Finding a candidate by name")]),_v(" "),_c('ol',[_c('li',[_c('p',[_v("Prerequisites: List contains the set of sample candidates.")])]),_v(" "),_c('li',[_c('p',[_v("Test case: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("find n/alex david")]),_c('br'),_v("\nExpected: List updates and only shows Alex Yeoh and David Li.")])]),_v(" "),_c('li',[_c('p',[_v("Test case: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("find -ca n/alex david")]),_c('br'),_v("\nExpected: List updates and is empty.")])]),_v(" "),_c('li',[_c('p',[_v("Test case: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("find n/")]),_c('br'),_v("\nExpected: List does not update. Error details shown in the result message.")])])])]),_v(" "),_c('li',[_c('p',[_v("Finding a candidate by multiple fields")]),_v(" "),_c('ol',[_c('li',[_c('p',[_v("Prerequisites: List contains the set of sample candidates.")])]),_v(" "),_c('li',[_c('p',[_v("Test case: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("find n/bernice t/python")]),_c('br'),_v("\nExpected: List updates and only shows Bernice Yu and Roy Balakrishnan.")])]),_v(" "),_c('li',[_c('p',[_v("Test case: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("find -ca n/bernice t/python")]),_c('br'),_v("\nExpected: List updates and only shows Bernice Yu.")])]),_v(" "),_c('li',[_c('p',[_v("Test case: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("find n/ t/python")]),_c('br'),_v("\nExpected: List does not update. Error details shown in the result message.")])])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Thu, 3 Apr 2025, 14:31:27 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Thu, 3 Apr 2025, 14:32:33 GMT+8]")])])])}
 }];
   
