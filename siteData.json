@@ -118,6 +118,7 @@
         "adding-a-person-add": "Adding a person: add",
         "listing-all-candidates-list": "Listing all candidates : list",
         "editing-a-candidate-edit": "Editing a candidate : edit",
+        "adding-tag-s-to-a-candidate-add-tags": "Adding Tag(s) to a Candidate: add-tags",
         "locating-candidates-by-name-find": "Locating candidates by name: find",
         "deleting-a-candidate-delete": "Deleting a candidate : delete",
         "switching-the-sorting-order-switch-sort": "Switching the sorting order : switch-sort",
