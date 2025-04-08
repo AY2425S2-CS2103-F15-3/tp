@@ -1,12 +1,7 @@
 @startuml
 start
 
-if ()
-    :User enters "switch-sort";
-else ()
-    :User clicks on sortButton;
-endif
-
+:User enters "switch-sort";
 :SwitchSortCommand is executed;
 :Check default sorting order;
 
